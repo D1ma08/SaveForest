@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'users/register.css' %}">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="formm" method="post">
+        {% csrf_token %}
+        
+        <div class="divback">
+            <a class="back" href="{% url 'index' %}"><img src="{% static 'users/img/arrow-left-alt-svgrepo-com.svg' %}" alt=""></a>
+        </div>
+        <img class="forest" src="{% static 'users/img/forest-svgrepo-com.svg' %}" alt="">
+        <p class="javap">Save Forest</p>
+      
+           
+            {{ form.username }}
+        
+        
+       
+         
+            {{ form.email }}
+       
+    
+     
+            
+            {{ form.password }}
+      
+    
+        <button class="but" type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+.formm{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    gap: 5px;
+    align-items: center;
+    width: 350px;
+    border-radius: 10px;
+    margin: auto auto;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.formm:not(:has(div)){
+    padding: 30px 0;
+}
+body{
+    background-image: url('../users/img/forest.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+.forest{
+    width: 60px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.but{
+    padding: 7px 0;
+    width: 214px;
+    border:none;
+    background-color: black;
+    color: white;
+}
+.but:hover{
+    background-color: rgb(64, 64, 64);
+}
+.input{
+    padding: 5px;
+    width: 214px;
+}
+
+.javap{
+    font-size: 30px;
+    line-height: 0;
+}
+.reg{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 214px;
+    text-align: center;
+    font-size: 13px;
+}
+.reg:hover{
+    background-color: rgb(235, 235, 235);
+}
+.divback{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    
+    
+}
+.back{
+    padding: 10px;
+    
+}
