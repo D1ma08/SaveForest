@@ -1,6 +1,5 @@
-*{
-    box-sizing: border-box;
-    
+p{
+    margin: 0;
 }
 body{
     background-image: url('../users/img/tuman.jpg'); 
@@ -178,6 +177,7 @@ button.but{
     padding: 15px;
     border-radius: 30px;
     padding: 20px 0;
+    text-align: center;
 }
 .photo{
     width: 50%;
@@ -291,15 +291,21 @@ button.but{
 .konec{
     display: flex;
     flex-direction: column;
-    border-left: 2px solid black;
+    text-align: left;
     padding: 10px;
+}
+.konec1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
 }
 .konec:first-child{
     border: none;
 }
 .fon{
     background-color: rgba(255, 255, 255, 0.657);
-    height: 100px;
+   
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -308,6 +314,7 @@ button.but{
     font-size: 30px;
     text-align: center;
     font-family: Playfair Display, sans-serif;
+    
     
 }
 .fonblock{
@@ -331,19 +338,19 @@ button.but{
     align-items: center;
     padding: 20px;
 }
-.vse_otzivi{
-    width: 80%;
-}
-.otziv img{
+
+.chel{
     width: 100px;
     border-radius: 100%;
     border: 3px solid white;
-    margin-left: 40px;
+    align-self: center;
+    justify-self: end;
 }
 .otziv{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
+    gap: 18px;
+    justify-content: end;
 }
 .comment{
     grid-column: span 2;
@@ -355,10 +362,78 @@ button.but{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 40px;
+    width: 80%;
 }
 .zagol{
     font-size: 50px;
     font-family: Playfair Display, sans-serif;
     margin-bottom: 20px;
+}
+.p1{
+    margin: 0;
+    bottom: 0;
+}
+.p2{
+    margin: 0;
+    bottom: 0;
+}
+@media(max-width:1050px){
+    .name{
+        font-size: 20px;
+    }
+}
+@media(max-width:870px){
+    .tretiblock{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media(max-width:800px){
+    .otziv{
+        grid-template-rows: repeat(2, max-content);
+    }
+    .vse_otzivi{
+        width: 100%;
+    }
+}
+@media(max-width:780px){
+    .piatblocov{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: auto;
+    }
+    .konec1{
+        grid-column: 1/-1;
+        width: 100%;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .p1{
+        border-left: 2px solid black;
+        padding: 0 5px;
+    }
+}
+@media(max-width:768px){
+    .tretiblock{
+        padding: 20px ;
+    }
+}
+@media(max-width:650px){
+    .vse_otzivi{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .otziv{
+        border-top: 2px solid black;
+        padding: 10px;
+    }
+}
+@media(max-width:425px){
+    .tretiblock{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .p2{
+        font-size: 18px;
+    }
 }
 
