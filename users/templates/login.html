@@ -12,29 +12,23 @@
     
     <form class="formm" method="post">
         {% csrf_token %}
-        
+        {{ form.non_field_errors }}
         <div class="divback">
-            <a class="back" href="{% url 'login' %}"><img src="{% static 'users/img/arrow-left-alt-svgrepo-com.svg' %}" alt=""></a>
+            <a class="back" href="{% url 'index' %}"><img src="{% static 'users/img/arrow-left-alt-svgrepo-com.svg' %}" alt=""></a>
         </div>
         <img class="forest" src="{% static 'users/img/forest-svgrepo-com.svg' %}" alt="">
         <p class="javap">Save Forest</p>
       
            
-            {{ form.username }}
-        
-        
-       
-         
-            {{ form.email }}
-       
+        {{ form.username.errors }}
+        {{ form.username }}
     
-     
-            
-            {{ form.password }}
-      
+        {{ form.password.errors }}
+        {{ form.password }}
     
-        <button class="but" type="submit">Зарегистрироваться</button>
-        <button class="but1" type="submit">Войти</button>
+    
+        <button class="but" type="submit">Войти</button>
+        <a class="zareg" href="{% url 'register' %}">Зарегистрироваться</a>
     </form>
 </body>
 </html>

@@ -42,6 +42,16 @@ body{
 .but:hover{
     background-color: rgb(64, 64, 64);
 }
+.but1{
+    padding: 7px 0;
+    width: 214px;
+    border:none;
+    background-color: rgb(134, 133, 133);
+    color: white;
+}
+.but1:hover{
+    background-color: rgb(64, 64, 64);
+}
 .input{
     padding: 5px;
     width: 214px;
@@ -72,4 +82,10 @@ body{
 .back{
     padding: 10px;
     
+}
+.zareg{
+    text-decoration: none ;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
 }
